@@ -1,0 +1,108 @@
+/* Categories */
+    .categories {
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+      gap: 1rem;
+      margin-left: 200px;
+      margin-right: 200px;
+    }
+
+    .card button {
+      font-size: 12px;
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      padding: 4px 10px;
+      border-radius: 12px;
+      color: white;
+      cursor: pointer;
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* ដាក់កណ្ដាលពិតៗ */
+    background: rgba(243,156,18,0.9);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0; /* លាក់ពីដើម */
+    transition: opacity 0.4s ease;
+    }
+
+/* បង្ហាញពេល hover */
+  .card:hover .btn {
+    opacity: 1;
+    border: 3px solid black;
+    }
+    .card:hover img {
+    filter: blur(1px);
+    opacity: 60%;
+    }
+    .card .btn{
+      font-family: "Odor Mean Chey", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+
+    .card {
+      background: #22222200;
+      border-radius: 10px;
+      text-align: center;
+      position: relative;
+    }
+
+    .img-box {
+      position: relative;
+      display: inline-block;
+    }
+
+    .img-box img {
+      width: 300px;
+      height: 300px;
+      border-radius: 8px;
+    }
+
+    .img-box .logo-text {
+      position: absolute;
+      bottom: 10px;      /* អក្សរលើរូបនៅផ្នែកខាងក្រោម */
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 24px;
+      font-weight: bold;
+      color: red;
+      text-shadow: 2px 2px 4px #000; /* បន្ថែម影ច្បាស់ៗ */
+    }
+
+    .titlesport {
+      margin: 10px 0 5px;
+      font-size: 16px;
+      font-weight: bold;
+      color: #fff;
+    }
+    h2{
+            font-family: "Odor Mean Chey", serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            font-size: 2.8rem;
+            margin: 20px 0 40px;
+            color: #e9c46a;
+            text-shadow: 0 0 10px rgba(233, 196, 106, 0.5);
+            letter-spacing: 2px;
+         }
+    

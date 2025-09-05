@@ -1,0 +1,79 @@
+/* ============container=========== */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .card {
+      overflow: hidden;
+      position: relative;
+      border-radius: 10px 10px 0 0;
+      width: 300px;
+      height: auto;
+      margin-top: 30px;
+    }
+    h2{
+        padding: 10px;
+        margin-left: 6%;
+        border-left: 5px solid gold;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+        font-family: "Odor Mean Chey", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .card .content {
+      padding: 15px;
+    }
+
+    .card h3 {
+      margin: 10px 0 5px;
+      font-size: 18px;
+    }
+    .card .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* ដាក់កណ្ដាលពិតៗ */
+    background: rgba(243,156,18,0.9);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 0; /* លាក់ពីដើម */
+    transition: opacity 0.4s ease;
+    }
+
+/* បង្ហាញពេល hover */
+  .card:hover .btn {
+    opacity: 1;
+    border: 3px solid black;
+    }
+    .card:hover img {
+    filter: blur(1px);
+    opacity: 60%;
+    }
+    h2{
+      
+    }
+    .card-container .btn{
+      font-family: "Odor Mean Chey", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+    

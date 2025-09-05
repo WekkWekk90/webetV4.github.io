@@ -1,0 +1,102 @@
+
+.logo {
+  display: flex;
+  align-items: center;            /* ស្មើគ្នាតាមដេក */
+  gap: 10px;                      /* ចន្លោះរវាង logo និង h1 */
+}
+
+.logo img {
+  height: 50px;                   /* កំណត់ទំហំ logo */
+  width: auto;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+    h2{
+        font-family: "Odor Mean Chey", serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+        font-size: 2.8rem;
+        margin: 20px 0 40px;
+        color: #e9c46a;
+        text-shadow: 0 0 10px rgba(233, 196, 106, 0.5);
+        letter-spacing: 2px;
+      }
+    
+    .line{
+      width: 90%;
+      border-bottom: 3px solid white;
+      margin-left: 5%;
+    }
+    .containerc {
+      max-width: 90%;
+      margin: 20px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
+      gap: 20px;
+    }
+
+    .cardc {
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #111;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    }
+
+    .cardc img.bg {
+      width: 100%;
+      height: 270px;
+      display: block;
+      border-radius: 10px;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* logo + button aligned left */
+      gap: 6px;
+    }
+
+    .logo1 {
+      width: 150px;   /* adjust size as needed */
+      height: auto;
+      display: block;
+    }
+
+    .btn {
+      background: #fbc02d;
+      color: #000;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-left: 20px;
+    }
+
+    .btn:hover {
+      background: #ffeb3b;
+      transform: scale(105%);
+      transition: background 1s ease;
+    }
+    .sec1 button{
+      font-family: "Odor Mean Chey", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+/* Mobile Responsive Header */
+@media screen and (max-width: 768px) {
+  
+
+  
+}

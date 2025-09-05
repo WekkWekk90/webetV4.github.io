@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/sports.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap" rel="stylesheet">
+  <title>WEBET9151 Website</title>
+  <style>
+    
+
+  </style>
+  
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="img/webet_logo-01.png" alt="Logo" >
+      <h1>WEBET9151<br><small>WEBET9151.com</small></h1>
+    </div>
+
+    <div class="header-right">
+      <div class="login">
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button id="signin-btn">Sign In</button>
+      </div>
+      <!-- Dropdown -->
+      <select class="lang-select" onchange="setLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="km">ខ្មែរ</option>
+      </select>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html" class="active"><img src="icon/booking_60px.png" alt=""><span id="nav-home" >HOME</span></a>
+    <a href="casino.html"><img src="icon/cards_80px.png" alt=""><span id="nav-casino" >CASINO</span></a>
+    <a href="sportsbook.html"><img src="icon/soccer_ball_60px.png" alt=""><span id="nav-sports" style="color: rgb(255, 200, 0);">SPORTSBOOK</span></a>
+    <a href="lotto.html"><img src="icon/billiard_ball_128px.png" alt=""><span id="nav-lotto">LOTTO</span></a>
+    <a href="cockfight.html"><img src="icon/cockscomb_96px.png" alt=""><span id="nav-cockfight">COCKFIGHT</span></a>
+    <a href="game.html"><img src="icon/slot_machine_96px.png" alt=""><span id="nav-games">GAMES</span></a>
+    <a href="fishing.html"><img src="icon/fishing_pole_emoji_96px.png" alt=""><span id="nav-fishing">FISHING</span></a>
+  </nav>
+
+  <!-- Marquee -->
+  <div class="marquee">
+    <span id="marquee-text">🔊 We wish you good luck and have a beautiful day... Welcome To WEBET9151 🔊</span>
+  </div>
+
+  <!-- Slideshow -->
+  <section class="hero">
+    <div class="slideshow-container">
+      <div class="slides"><img src="img/bannersport.jpg" alt="Slide 1"></div>
+      <!-- <div class="slides"><img src="img/2.png" alt="Slide 2"></div>
+      <div class="slides"><img src="img/3.png" alt="Slide 3"></div> -->
+
+      <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div> -->
+    </div>
+    <script>
+      let slideIndex = 1;
+    showSlides(slideIndex);
+    function plusSlides(n) { showSlides(slideIndex += n); }
+    function currentSlide(n) { showSlides(slideIndex = n); }
+    function showSlides(n) {
+      let i, slides = document.getElementsByClassName("slides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) slides[i].style.display = "none";
+      for (i = 0; i < dots.length; i++) dots[i].className = dots[i].className.replace(" active", "");
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    setInterval(() => { plusSlides(1); }, 3000);
+    </script>
+  </section>
+  <!-- ========================container================= -->
+  <section>
+    <h2 id="sport-title">SWC88 SPORTS</h2>
+    <div class="card-container">
+    <!-- Card 1 -->
+     <!-- Card -->
+    <a href="#">
+      <div class="card highlight">
+          <div class="img-box">
+            <img src="img/cr7.jpg" alt="Product">
+            <span class="logo-text">M9BET</span> <!-- ពាក្យលើរូប -->
+          </div>
+          <p class="titlesport">M9BET Sportsbook</p> <!-- ពាក្យក្រោមរូប -->
+          <a href="#" class="btn">Buy Now</a>
+      </div>
+    </a>
+
+    <!-- Card 2 -->
+      <a href="#">
+      <div class="card highlight">
+          <div class="img-box">
+            <img src="img/m10.jpg" alt="Product">
+            <span class="logo-text">M9BET</span> <!-- ពាក្យលើរូប -->
+          </div>
+          <p class="titlesport">M9BET Sportsbook</p> <!-- ពាក្យក្រោមរូប -->
+          <a href="#" class="btn">Buy Now</a>
+      </div>
+    </a>
+    <!-- Card 3 -->
+      <a href="#">
+      <div class="card highlight">
+          <div class="img-box">
+            <img src="img/jr10.jpg" alt="Product">
+            <span class="logo-text">M9BET</span> <!-- ពាក្យលើរូប -->
+          </div>
+          <p class="titlesport">M9BET Sportsbook</p> <!-- ពាក្យក្រោមរូប -->
+          <a href="#" class="btn">Buy Now</a>
+      </div>
+    </a>
+
+  </div>
+  </section>
+    <!-- ==========================footer================== -->
+    <footer>
+    <p id="footer-text">
+        We provide our members with <b>LIVE CASINO, LIVE SPORTS, COCKFIGHT, LOTTO</b> 
+        and <b>SLOT GAMES</b>. We are committed to providing you the best value in whatever your game may be. 
+        <br>With a combination of technology expertise and market experience, 
+        we are the licensed name that you can trust for long term entertainment service.
+    </p>
+
+    <div class="footer-links">
+        <a href="#" id="footer-responsible">RESPONSIBLE GAMBLING</a> | 
+        <a href="#" id="footer-terms">TERMS AND CONDITIONS</a> | 
+        <a href="#" id="footer-contact">CONTACT US</a>
+    </div>
+
+    <div class="copyright">
+        <span id="footer-copy">@WEBWT9151</span>
+    </div>
+    </footer>
+
+    <!-- ===========================translate========================== -->
+
+    <script>
+      // Translations
+      const translations = {
+    en: {
+      signin: "Sign In",
+      marquee: "🔊 We wish you good luck and have a beautiful day... Welcome To @WEBET9151 🔊",
+      nav: ["HOME","CASINO","SPORTSBOOK","LOTTO","COCKFIGHT","GAMES","FISHING"],
+      sportTitle: "SWC88 SPORTS",
+      lottoTitle: "SWC88 LOTTO",
+      otherCasino: "OTHER CASINO",
+      play: "Play Now",
+      footer: {
+        text: "We provide our members with <b>LIVE CASINO, LIVE SPORTS, COCKFIGHT, LOTTO</b> and <b>SLOT GAMES</b>. We are committed to providing you the best value in whatever your game may be. <br>With a combination of technology expertise and market experience, we are the licensed name that you can trust for long term entertainment service.",
+        responsible: "RESPONSIBLE GAMBLING",
+        terms: "TERMS AND CONDITIONS",
+        contact: "CONTACT US",
+        copy: "@WEBET9151"
+      }
+    },
+    km: {
+      signin: "ចូល",
+      marquee: "🔊 សូមជូនពរឱ្យអ្នកសំណាងល្អ និងមានថ្ងៃល្អសប្បាយ... សូមស្វាគមន៍មកកាន់ WEBET9151 🔊",
+      nav: ["ទំព័រដើម","កាស៊ីណូ","កីឡា","ឡូតូ","បក្សីកីឡា","ហ្គេមស្លុត","បាញ់ត្រី"],
+      sportTitle: "កីឡា SWC88",
+      otherCasino: "កាស៊ីណូ ផ្សេងទៀត",
+      play: "ចូលលេង",
+      footer: {
+        text: "យើងផ្តល់ជូនសមាជិកនូវ <b>កាស៊ីណូផ្សាយផ្ទាល់ កីឡាផ្សាយផ្ទាល់ បក្សីកីឡា ឡូតូ</b> និង <b>ស្លុតហ្គេម</b>។ យើងស្មោះត្រង់ក្នុងការផ្តល់តម្លៃល្អបំផុតសម្រាប់ការលេងរបស់អ្នក។ <br>ជាមួយបទពិសោធន៍និងបច្ចេកវិទ្យា យើងជាក្រុមហ៊ុនដែលមានអាជ្ញាប័ណ្ណ អ្នកអាចទុកចិត្តបានសម្រាប់ការកម្សាន្តរយៈពេលវែង។",
+        responsible: "ការលេងកីឡាទទួលខុសត្រូវ",
+        terms: "លក្ខខណ្ឌនិងកិច្ចព្រមព្រៀង",
+        contact: "ទំនាក់ទំនង",
+        copy: "@WEBET9151"
+      }
+    }
+  };
+
+    function setLanguage(lang) {
+  localStorage.setItem("lang", lang);
+
+  // header + marquee
+  document.getElementById("signin-btn").innerText = translations[lang].signin;
+  document.getElementById("marquee-text").innerText = translations[lang].marquee;
+  document.getElementById("nav-home").innerText = translations[lang].nav[0];
+  document.getElementById("nav-casino").innerText = translations[lang].nav[1];
+  document.getElementById("nav-sports").innerText = translations[lang].nav[2];
+  document.getElementById("nav-lotto").innerText = translations[lang].nav[3];
+  document.getElementById("nav-cockfight").innerText = translations[lang].nav[4];
+  document.getElementById("nav-games").innerText = translations[lang].nav[5];
+  document.getElementById("nav-fishing").innerText = translations[lang].nav[6];
+
+  document.getElementById("sport-title").innerText = translations[lang].sportTitle;
+  // buttons
+  document.querySelectorAll(".btn").forEach(btn => {
+    btn.innerText = translations[lang].play;
+  });
+
+  // footer
+  document.getElementById("footer-text").innerHTML = translations[lang].footer.text;
+  document.getElementById("footer-responsible").innerText = translations[lang].footer.responsible;
+  document.getElementById("footer-terms").innerText = translations[lang].footer.terms;
+  document.getElementById("footer-contact").innerText = translations[lang].footer.contact;
+  document.getElementById("footer-copy").innerText = translations[lang].footer.copy;
+}
+window.onload = function() {
+  const savedLang = localStorage.getItem("lang");
+  
+  if (savedLang) {
+    setLanguage(savedLang);
+    document.querySelector('.lang-select').value = savedLang;
+  } else {
+    setLanguage("en"); // Default English
+    document.querySelector('.lang-select').value = "en";
+  }
+};
+    </script>
+
+  
+  </body>
+</html>

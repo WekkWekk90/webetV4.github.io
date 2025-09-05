@@ -1,0 +1,211 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .menu{
+        text-align: center;
+      padding: 30px 20px 20px;
+      justify-content: center;
+    }
+    .li{
+        width: 100%;
+        height: 3px;
+        background-color: aliceblue;
+    }
+    .category-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin: 20px 0 30px;
+      padding: 0 20px;
+    }
+    
+    .category-buttons button {
+      background: linear-gradient(to right, var(--primary), var(--secondary));
+      border: none;
+      padding: 12px 30px;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      color: white;
+      transition: all 0.3s ease;
+      background-color: rgba(255, 217, 0, 0.384);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .category-buttons button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 7px 20px rgba(83, 83, 83, 0.397);
+    }
+    
+    .category-buttons button.active {
+      background-color: gold;
+      box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+    }
+    
+    .category-buttons button i {
+      font-size: 18px;
+    }
+    
+    .games-container {
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 0 20px;
+      margin-top: 50px;
+      
+    }
+    
+    .games {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 25px;
+      justify-content: center;
+    }
+    
+    
+    .game-card {
+      background: linear-gradient(145deg, #1e2044, #232756);
+      border-radius: 15px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+      position: relative;
+      margin-bottom: 25px;
+    }
+    .games-container a{
+      text-decoration: none;
+      color: aliceblue;
+    }
+    
+    .game-card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+    
+    .game-image {
+      width: 100%;
+      height: 180px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .game-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+    
+    .game-card:hover .game-image img {
+      transform: scale(1.1);
+    }
+    
+    .game-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+      padding: 20px 15px 15px;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    
+    .game-card:hover .game-overlay {
+      opacity: 1;
+    }
+    
+    .play-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: var(--accent);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(255, 107, 107, 0.5);
+    }
+    
+    .game-card:hover .play-btn {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.1);
+    }
+    
+    .play-btn i {
+      color: white;
+      font-size: 20px;
+      margin-left: 3px;
+    }
+    
+    .game-info {
+      padding: 15px;
+    }
+    
+    .game-title {
+      font-weight: 600;
+      margin-bottom: 5px;
+      font-size: 16px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .game-category {
+      color: var(--gray);
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    
+    .game-stats {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+      font-size: 13px;
+    }
+    
+    .game-rating, .game-players {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      color: var(--gray);
+    }
+    
+    .game-rating i {
+      color: gold;
+    }
+    
+    .hidden {
+      display: none;
+    }
+    
+    .fade-in {
+      animation: fadeIn 0.5s ease forwards;
+    }
+    
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    
+    .no-results {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 40px;
+      color: var(--gray);
+    }
+    
+
+    
