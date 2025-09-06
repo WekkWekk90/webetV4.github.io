@@ -254,7 +254,7 @@ body {
     padding: 0 10px;
   }
   .sec1 .logo1{
-    scale: 1;
+    scale: 1.5;
     margin-bottom: 15%;
     }
     .sec1 .btn{
@@ -306,11 +306,11 @@ body {
     padding: 20px 10px;
   }
   .sec1 .logo1{
-    scale: 0.7;
+    scale: 1;
     margin-bottom: -15%;
     }
     .sec1 .btn{
-        scale: 0.8;
+        scale: 0.9;
         margin-bottom: -15%;
     }
     .sec1 .cardc{
