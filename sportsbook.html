@@ -57,7 +57,9 @@
   <!-- Slideshow -->
   <section class="hero">
     <div class="slideshow-container">
-      <div class="slides"><img src="img/bannersport.jpg" alt="Slide 1"></div>
+      <div class="slides"><img src="img/bannersport.jpg" alt="Slide 1">
+        <span id="banner-text" class="banner-text">Welcome</span>
+      </div>
       <!-- <div class="slides"><img src="img/2.png" alt="Slide 2"></div>
       <div class="slides"><img src="img/3.png" alt="Slide 3"></div> -->
 
@@ -94,37 +96,37 @@
     <div class="card-container">
     <!-- Card 1 -->
      <!-- Card -->
-    <a href="#">
+    <a href="https://swc88.com/" target="_blank">
       <div class="card highlight">
           <div class="img-box">
             <img src="img/cr7.jpg" alt="Product">
-            <span class="logo-text">M9BET</span> <!-- ពាក្យលើរូប -->
+            <span class="logo-text">SWC88</span> 
           </div>
-          <p class="titlesport">M9BET Sportsbook</p> <!-- ពាក្យក្រោមរូប -->
-          <a href="#" class="btn">Buy Now</a>
+          <p class="titlesport">SWC88 Sportsbook</p> 
+          <a href="https://swc88.com/" target="_blank" class="btn">Play Now</a>
       </div>
     </a>
 
     <!-- Card 2 -->
-      <a href="#">
+      <a href="https://swc88.com/" target="_blank">
       <div class="card highlight">
           <div class="img-box">
             <img src="img/m10.jpg" alt="Product">
-            <span class="logo-text">M9BET</span> <!-- ពាក្យលើរូប -->
+            <span class="logo-text">SWC88</span> 
           </div>
-          <p class="titlesport">M9BET Sportsbook</p> <!-- ពាក្យក្រោមរូប -->
-          <a href="#" class="btn">Buy Now</a>
+          <p class="titlesport">SWC88 Sportsbook</p> 
+          <a href="https://swc88.com/" target="_blank" class="btn">Play Now</a>
       </div>
     </a>
     <!-- Card 3 -->
-      <a href="#">
+      <a href="https://swc88.com/" target="_blank">
       <div class="card highlight">
           <div class="img-box">
             <img src="img/jr10.jpg" alt="Product">
-            <span class="logo-text">M9BET</span> <!-- ពាក្យលើរូប -->
+            <span class="logo-text">SWC88</span> 
           </div>
-          <p class="titlesport">M9BET Sportsbook</p> <!-- ពាក្យក្រោមរូប -->
-          <a href="#" class="btn">Buy Now</a>
+          <p class="titlesport">SWC88 Sportsbook</p>
+          <a href="https://swc88.com/" target="_blank" class="btn">Play Now</a>
       </div>
     </a>
 
@@ -160,7 +162,7 @@
       marquee: "🔊 We wish you good luck and have a beautiful day... Welcome To @WEBET9151 🔊",
       nav: ["HOME","CASINO","SPORTSBOOK","LOTTO","COCKFIGHT","GAMES","FISHING"],
       sportTitle: "SWC88 SPORTS",
-      lottoTitle: "SWC88 LOTTO",
+      bannertext: "Welcome",
       otherCasino: "OTHER CASINO",
       play: "Play Now",
       footer: {
@@ -176,6 +178,7 @@
       marquee: "🔊 សូមជូនពរឱ្យអ្នកសំណាងល្អ និងមានថ្ងៃល្អសប្បាយ... សូមស្វាគមន៍មកកាន់ WEBET9151 🔊",
       nav: ["ទំព័រដើម","កាស៊ីណូ","កីឡា","ឡូតូ","បក្សីកីឡា","ហ្គេមស្លុត","បាញ់ត្រី"],
       sportTitle: "កីឡា SWC88",
+      bannertext: "សូមស្វាគមន៍",
       otherCasino: "កាស៊ីណូ ផ្សេងទៀត",
       play: "ចូលលេង",
       footer: {
@@ -203,6 +206,7 @@
   document.getElementById("nav-fishing").innerText = translations[lang].nav[6];
 
   document.getElementById("sport-title").innerText = translations[lang].sportTitle;
+  document.getElementById("banner-text").innerText = translations[lang].bannertext;
   // buttons
   document.querySelectorAll(".btn").forEach(btn => {
     btn.innerText = translations[lang].play;
