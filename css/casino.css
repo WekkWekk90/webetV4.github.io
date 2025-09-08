@@ -40,7 +40,7 @@
 
     /* For other casino images */
     .other-grid img {
-      border-radius: 10px;
+      /* border-radius: 10px; */
       width: 100%;         /* fill available width */
       height: 200px;       /* keep consistent height */
       object-fit: cover;   /* crop nicely without stretching */
