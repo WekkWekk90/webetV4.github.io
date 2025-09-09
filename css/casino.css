@@ -100,7 +100,7 @@
       overflow: hidden;
       position: relative;
       border-radius: 10px ;
-      width: 250px;
+      width: 350px;
     }
 
     .card:hover {
@@ -108,7 +108,7 @@
     }
 
     .card img {
-      width: 250px;
+      width: 350px;
       height: 100%;
       display: block;
     }
