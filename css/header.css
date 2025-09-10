@@ -160,8 +160,16 @@ body {
       border-radius: 12px;
       overflow: hidden;
     }
+    .slideshow-container {
+      position: relative;
+    }
 
-    .slides { display: none; }
+    .slides {
+      display: none;
+      animation: fade 1s;
+    }
+    
+
     .slides img { width: 100%; border-radius: 12px; }
 
     /* Prev/Next */
