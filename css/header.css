@@ -34,20 +34,20 @@ body {
     }
 
     header .logo {
-    display: flex;           /* បង្ហាញជា flex row */
-    align-items: center;     /* ឲ្យ logo និង h1 ស្មើជួរ */
-    gap: 10px;               /* ចន្លោះពីរវត្ថុ */
+    display: flex;           
+    align-items: center;     
+    gap: 10px;              
     }
 
     header .logo img {
-    height: 60px;            /* កំណត់ទំហំរូបភាព */
+    height: 60px;           
     }
 
     header .logo h1 {
     margin: 0;
     font-family: 'Odor Mean Chey', sans-serif;
     font-size: 24px;
-    line-height: 1;          /* បង្កើនស្មើជួរជាមួយ logo */
+    line-height: 1;          
     color: gold;
     }
 

@@ -21,7 +21,7 @@
     .casino-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
-      gap: 150px; /* ចន្លោះរវាងកាត */
+      gap: 150px; 
       margin: 20px 0;
     }
     .casino-grid .card{
@@ -120,12 +120,12 @@
     
 
     
-    /* Button លាក់ពីដើម */
+    
     .card .btn {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* ដាក់កណ្ដាលពិតៗ */
+    transform: translate(-50%, -50%); 
     background: rgba(243,156,18,0.9);
     color: #fff;
     padding: 12px 24px;
@@ -134,11 +134,11 @@
     border-radius: 8px;
     cursor: pointer;
     text-decoration: none;
-    opacity: 0; /* លាក់ពីដើម */
+    opacity: 0; 
     transition: opacity 0.4s ease;
     }
 
-/* បង្ហាញពេល hover */
+
   .card:hover .btn {
     opacity: 1;
     border: 3px solid black;
