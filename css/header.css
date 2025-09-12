@@ -315,17 +315,17 @@ body {
   }
   .sec1 .logo1{
     scale: 1;
-    margin-bottom: -15%;
+    /* margin-bottom: -15%; */
     }
     .sec1 .btn{
         scale: 0.9;
-        margin-bottom: -15%;
+        /* margin-bottom: -15%; */
     }
     .sec1 .cardc{
-        scale: 0.5;
+        scale: 0.4;
         margin: -30px;
         margin-left: -250px;
-        margin-bottom: -20px;
+        /* margin-bottom: -20px; */
     }
   
 }
