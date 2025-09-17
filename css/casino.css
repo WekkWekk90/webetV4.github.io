@@ -93,7 +93,8 @@
       display: flex;
       flex-wrap: wrap;
       gap: 20px;
-      justify-content: center;
+      /* justify-content: center; */
+      
     }
 
     .card {
@@ -116,11 +117,6 @@
     .card .content {
       padding: 15px;
     }
-
-    
-
-    
-    
     .card .btn {
     position: absolute;
     top: 50%;
