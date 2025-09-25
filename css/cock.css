@@ -29,9 +29,9 @@
       }
     
     .line{
-      width: 90%;
+      width: 100%;
       border-bottom: 3px solid white;
-      margin-left: 5%;
+      margin-bottom: 10px;
     }
     .containerc {
       max-width: 90%;

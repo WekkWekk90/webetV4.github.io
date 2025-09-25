@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Odor+Mean+Chey&display=swap" rel="stylesheet">
   <title>WEBET9151 Website</title>
   <style>
@@ -90,82 +91,43 @@
   </section>
   <!-- ============================conten====================== -->
 
-    <h2>🌐Website</h2>
+  <!-- Cards -->
+  <section class="py-8">
+  <h2 class="text-4xl font-bold text-center mb-8">🌐 Website</h2>
   <div class="line"></div>
-  <section class="sec1">
-    <div class="containerc">
-<!-- ============================card1============================= -->
-    <a href="https://88asia.pro/game/cockfight" target="_blank">
-      <div class="cardc">
-      <img class="bg" src="img/swcbtn.png" alt="SWC88" >
-      <div class="overlay">
-        <img class="logo1" src="img/swc.png" alt="SWC88 Logo" style="border-radius: 20px;">
-        <button class="btn">Bet Now</button>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-10 max-w-full mx-auto px-4">
+
+    <!-- Card 1 SWC88 -->
+    <a href="https://88asia.pro/game/cockfight" target="_blank"
+       class="relative rounded-3xl overflow-hidden shadow-2xl">
+      <img src="img/swcbtn.png" alt="SWC88" class="w-full h-64 object-cover">
+
+      <!-- Overlay (always visible, left aligned) -->
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-start justify-center p-6">
+        <img src="img/swc.png" class="h-28 mb-4 rounded-xl" alt="SWC Logo">
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-6 py-3 rounded-xl">
+          Bet Now
+        </button>
       </div>
-    </div>
     </a>
-<!-- ============================card2============================= -->
-    <a href="https://m99.one/login" target="_blank">
-      <div class="cardc">
-      <img class="bg" src="img/m99btn.png" alt="m99">
-      <div class="overlay">
-        <img class="logo1" src="img/m99.png" alt="SWC88 Logo" style="border-radius: 20px;">
-        <button class="btn">Bet Now</button>
+
+    <!-- Card 2 M99 -->
+    <a href="https://m99.one/login" target="_blank"
+       class="relative rounded-3xl overflow-hidden shadow-2xl">
+      <img src="img/m99btn.png" alt="M99" class="w-full h-64 object-cover">
+
+      <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col items-start justify-center p-6">
+        <img src="img/m99.png" class="h-28 mb-4 rounded-xl" alt="M99 Logo">
+        <button class="bg-yellow-500 hover:bg-yellow-600 text-black font-bold text-lg px-6 py-3 rounded-xl">
+          Bet Now
+        </button>
       </div>
-    </div>
     </a>
-<!-- ============================card3============================= -->
-    <a href="https://sb24h.com/login" target="_blank">
-      <div class="cardc">
-      <img class="bg" src="img/sb24btn.png" alt="sb24">
-      <div class="overlay">
-        <img class="logo1" src="img/sb24.png" alt="SWC88 Logo" style="border-radius: 20px;">
-        <button class="btn">Bet Now</button>
-      </div>
-    </div>
-    </a>
-    <!-- ============================card4============================= -->
-    <a href="https://88asia.pro/game/cockfight" target="_blank">
-      <div class="cardc">
-      <img class="bg" src="img/f88btn.png" alt="sb24">
-      <div class="overlay">
-        <img class="logo1" src="img/f88.png" alt="SWC88 Logo" style="border-radius: 20px;">
-        <button class="btn">Bet Now</button>
-      </div>
-    </div>
-    </a>
-    <!-- ============================card5============================= -->
-    <a href="https://88asia.pro/game/cockfight" target="_blank">
-      <div class="cardc">
-      <img class="bg" src="img/wa855-01.png" alt="sb24">
-      <div class="overlay">
-        <img class="logo1" src="img/wa855.png" alt="SWC88 Logo" style="border-radius: 20px;">
-        <button class="btn">Bet Now</button>
-      </div>
-    </div>
-    </a>
-    <!-- ============================card6============================= -->
-    <a href="https://88asia.pro/game/cockfight" target="_blank">
-      <div class="cardc">
-      <img class="bg" src="img/cf7-01.png" alt="sb24">
-      <div class="overlay">
-        <img class="logo1" src="img/cf789.png" alt="SWC88 Logo" style="border-radius: 20px;">
-        <button class="btn">Bet Now</button>
-      </div>
-    </div>
-    </a>
-    <!-- ============================card7============================= -->
-    <!-- <a href="https://swc88.com/game/cockfight" target="_blank" >
-      <div class="cardc">
-      <img class="bg" src="img/p99-01.png" alt="sb24">
-      <div class="overlay">
-        <img class="logo1" src="img/p99.webp" alt="SWC88 Logo" style="border-radius: 20px;">
-        <button class="btn">Bet Now</button>
-      </div>
-    </div>
-    </a> -->
-    </div>
-  </section>
+
+    <!-- Copy for SB24, F88, WA855, CF789 -->
+
+  </div>
+</section>
 
     <!-- ==========================footer================== -->
     <footer>
